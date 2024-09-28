@@ -73,7 +73,6 @@ if not st.session_state.game_over:
                 st.session_state.feedback_message = "✅ Correct!"
                 st.session_state.streak += 1
             else:
-                session_over()
                 st.session_state.final_streak = st.session_state.streak
                 st.session_state.streak = 0
                 st.session_state.game_over = True
